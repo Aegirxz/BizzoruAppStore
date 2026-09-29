@@ -5,7 +5,6 @@ export default function Hero() {
     <section aria-labelledby="hero-title" className="hero-section" id="home">
       <div className="section-wrap hero-inner">
         <div className="hero-copy">
-          <div className="hero-label"><span /> PREMIUM DIGITAL ACCESS</div>
           <h1 className="hero-title" id="hero-title">BIZZORU <span>STORE</span></h1>
           <p className="hero-subtitle">APP PREMIUM</p>
           <p className="hero-description">
