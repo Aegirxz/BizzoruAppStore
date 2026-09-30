@@ -1,5 +1,4 @@
 import { ArrowUpRight } from "lucide-react";
-import Image from "next/image";
 import { formatRupiah, productCategoryLabels, type Product } from "@/data/products";
 
 const productLogos: Record<string, { background: string; color: string }> = {
@@ -42,7 +41,7 @@ export default function ProductCard({ product }: { product: Product }) {
       </div>
 
       <div className="mb-3 overflow-hidden rounded-md border border-white/10 bg-[#0d0e10]">
-        <Image alt={`${product.name} preview`} className="h-28 w-full object-cover" height={180} src={imageSrc} width={320} />
+        <img alt={`${product.name} preview`} className="h-28 w-full object-cover" src={imageSrc} />
       </div>
 
       <h3 className="product-name">{product.name}</h3>
