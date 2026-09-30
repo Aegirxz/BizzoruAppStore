@@ -1,19 +1,33 @@
+export const productCategories = ["editing", "hiburan", "sosmed", "lainnya"] as const;
+
+export type ProductCategory = (typeof productCategories)[number];
+
+export const productCategoryLabels: Record<ProductCategory, string> = {
+  editing: "Editing",
+  hiburan: "Hiburan",
+  sosmed: "Sosmed",
+  lainnya: "Lainnya",
+};
+
 export type Product = {
   name: string;
   duration: string;
   price: number;
   icon: string;
   tone: string;
-  category: string;
+  category: ProductCategory;
 };
 
 export const products: Product[] = [
-  { name: "Netflix Premium", duration: "1 Bulan", price: 35000, icon: "N", tone: "netflix", category: "Streaming" },
-  { name: "Spotify Premium", duration: "1 Bulan", price: 18000, icon: "S", tone: "spotify", category: "Musik" },
-  { name: "YouTube Premium", duration: "1 Bulan", price: 20000, icon: "▶", tone: "youtube", category: "Streaming" },
-  { name: "Canva Pro", duration: "1 Bulan", price: 15000, icon: "C", tone: "canva", category: "Kreativitas" },
-  { name: "CapCut Pro", duration: "1 Bulan", price: 25000, icon: "CC", tone: "capcut", category: "Kreativitas" },
-  { name: "Viu Premium", duration: "1 Bulan", price: 12000, icon: "viu", tone: "viu", category: "Anime & Drama" },
+  { name: "Alight Motion", duration: "1 Tahun", price: 10000, icon: "🎬", tone: "alightmotion", category: "editing" },
+  { name: "Canva Pro", duration: "1 Bulan", price: 15000, icon: "🎨", tone: "canva", category: "editing" },
+  { name: "Capcut Pro", duration: "7 Hari", price: 10000, icon: "✂️", tone: "capcut", category: "editing" },
+  { name: "Capcut Pro", duration: "1 Bulan", price: 35000, icon: "✂️", tone: "capcut", category: "editing" },
+  { name: "Wink", duration: "14 Hari", price: 10000, icon: "✨", tone: "wink", category: "editing" },
+  { name: "Wink", duration: "1 Bulan", price: 20000, icon: "✨", tone: "wink", category: "editing" },
+  { name: "YouTube Premium", duration: "1 Bulan", price: 10000, icon: "▶️", tone: "youtube", category: "hiburan" },
+  { name: "Spotify Premium", duration: "1 Bulan", price: 15000, icon: "🎧", tone: "spotify", category: "hiburan" },
+  { name: "Netflix", duration: "1 Bulan", price: 45000, icon: "🍿", tone: "netflix", category: "hiburan" },
 ];
 
 export const formatRupiah = (amount: number) => `Rp${amount.toLocaleString("id-ID")}`;
