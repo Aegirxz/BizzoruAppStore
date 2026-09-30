@@ -14,19 +14,19 @@ const productLogos: Record<string, { background: string; color: string }> = {
 };
 
 const productImages: Record<string, string> = {
-  "Alight Motion": "/images/WhatsApp Image 2026-09-30 at 19.40.08 (2).jpeg",
-  "Canva Pro": "/images/WhatsApp Image 2026-09-30 at 19.40.08.jpeg",
-  "Capcut Pro": "/images/WhatsApp Image 2026-09-30 at 19.40.09.jpeg",
-  "Wink": "/images/WhatsApp Image 2026-09-30 at 19.40.09 (1).jpeg",
-  "YouTube Premium": "/images/WhatsApp Image 2026-09-30 at 19.40.07.jpeg",
-  "Spotify Premium": "/images/WhatsApp Image 2026-09-30 at 19.40.07 (1).jpeg",
-  "Netflix": "/images/WhatsApp Image 2026-09-30 at 19.40.08 (1).jpeg",
+  alightmotion: "/alightmotion.jpeg",
+  canva: "/canva.jpeg",
+  capcut: "/capcut.jpeg",
+  wink: "/wink.jpeg",
+  youtube: "/youtube.jpeg",
+  spotify: "/spotify.jpeg",
+  netflix: "/netflix.jpeg",
 };
 
 export default function ProductCard({ product }: { product: Product }) {
   const logo = productLogos[product.tone] ?? { background: "#1b1d20", color: "#d4af37" };
   const orderMessage = encodeURIComponent(`Halo Bizzoru Store, saya ingin order ${product.name} (${product.duration}).`);
-  const imageSrc = productImages[product.name] ?? "/brandlogo.jpeg";
+  const imageSrc = productImages[product.tone] ?? "/brandlogo.jpeg";
 
   return (
     <article className="product-card">
