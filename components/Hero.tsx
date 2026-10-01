@@ -27,18 +27,7 @@ export default function Hero() {
         </div>
         <div aria-hidden="true" className="hero-art">
           <div className="hero-orbit" />
-          <div className="hero-core">
-            <div className="core-mark">B</div>
-            <div className="core-caption"><span>ACCESS GRANTED</span><Sparkles size={11} /></div>
-          </div>
-          <div className="hero-chip chip-top">
-            <BadgeCheck size={17} />
-            <span><strong>Premium unlocked</strong><small>More play. More possibility.</small></span>
-          </div>
-          <div className="hero-chip chip-bottom">
-            <Gamepad2 size={19} />
-            <span><strong>Your next level</strong><small>Streaming · Gaming · Creator</small></span>
-          </div>
+          
           <span className="hero-side-mark">BUILT FOR YOUR NEXT LEVEL</span>
         </div>
       </div>

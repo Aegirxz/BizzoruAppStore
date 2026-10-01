@@ -13,10 +13,10 @@ const productLogos: Record<string, { background: string; color: string }> = {
 };
 
 const productImages: Record<string, string> = {
-  alightmotion: "/wink.jpeg",
+  alightmotion: "/alightmotion.jpeg",
   canva: "/canva.jpeg",
-  capcut: "/alightmotion.jpeg",
-  wink: "/capcut.jpeg",
+  capcut: "/capcut.jpeg",
+  wink: "/wink.jpeg",
   youtube: "/youtube.jpeg",
   spotify: "/spotify.jpeg",
   netflix: "/netflix.jpeg",
