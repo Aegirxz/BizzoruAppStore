@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUpRight, BadgeCheck, Gamepad2, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowDown, ArrowUpRight, ShieldCheck } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -26,9 +26,9 @@ export default function Hero() {
           </div>
         </div>
         <div aria-hidden="true" className="hero-art">
-          <div className="hero-orbit" />
-          
-          <span className="hero-side-mark">BUILT FOR YOUR NEXT LEVEL</span>
+          <div className="hero-brand-frame">
+            <img alt="Logo Bizzoru Store" className="hero-brand-image" src="/brandlogo.jpeg" />
+          </div>
         </div>
       </div>
     </section>
